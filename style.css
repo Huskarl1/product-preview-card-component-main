@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@500;800&display=swap');  
+
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    display: flex;
+    width: 1440px;
+    height: 100vh;
+    font-size: 14px;
+    background-color: var(--Cream);
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrapper{
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    max-width: 720px;
+    height: 500px;
+    padding-bottom: 25%;
+    background-color: var(--White);
+    border-radius: 20px;
+    margin: auto;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper img{
+    position: absolute;
+    display: flex;
+    
+    width: 50%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 15%;
+    border-radius: 20px 0px 0px 20px;
+    
+}
+.buy{
+    flex-direction: column;
+    position: relative;
+    display: inline;
+    width:50%;
+    height: 100%;
+    float: right;
+    
+    
+}
+.buy p{
+    margin: 30px 30px 5px 30px;
+    font-family: 'Montserrat',sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+.buy h2{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Fraunces', sans-serif;
+    
+}
+.price h2,p{
+    display: inline-block;
+}
+.buy .btn{
+    width: 80%;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: var(--Dark-cyan);
+    border: 0px;
+    font-family: 'Fraunces', sans-serif;
+}
+.btn:hover{
+    background-color: var(--Very-dark-blue);
+}
+
+@media (max-width: 375px) {
+    body {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .wrapper {
+      width: 100%;
+      height: auto;
+      padding-bottom: 75%;
+    }
+  
+    .wrapper img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 0;
+    }
+  
+    .buy {
+      color: black;
+      width: 50%;
+      height: 50%;
+      float: none;
+      margin-top: auto;
+    }
+  
+    .buy h2 {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  
+    .buy p {
+    color: black;
+    margin: 10px 0;
+    }
+  
+    .btn {
+      margin: 10px auto 0 auto;
+    }
+  }
+ 
